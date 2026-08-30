@@ -1,0 +1,17 @@
+{
+  "name": "Japan & Hong Kong — Master Itinerary",
+  "short_name": "Japan",
+  "description": "Offline day-by-day itinerary: Tokyo Nov 25-30, cruise Nov 30 - Dec 12.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F6F1E5",
+  "theme_color": "#16323F",
+  "icons": [
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
