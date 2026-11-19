@@ -41,7 +41,7 @@ been opened online at least once.
 
 Re-upload the new `index.html` **and** the new `sw.js` together. The version
 string at the top of `sw.js` is already bumped for you on every rebuild — this
-kit is `japan-itinerary-v33`. Without a new `sw.js`, the phone keeps serving
+kit is `japan-itinerary-v34`. Without a new `sw.js`, the phone keeps serving
 the old cached copy no matter how many times you reload.
 
 Then open the app twice: once to fetch the update, once to see it. If it still

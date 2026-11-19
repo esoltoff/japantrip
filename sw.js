@@ -1,7 +1,7 @@
 /* Offline cache for the itinerary. Cache-first: once installed, the app never
    touches the network again, which is the whole point on a ship. Bump CACHE
    when you re-upload a new index.html. */
-const CACHE = 'japan-itinerary-v33';
+const CACHE = 'japan-itinerary-v34';
 const FILES = [
   './',
   './index.html',
