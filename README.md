@@ -39,10 +39,13 @@ been opened online at least once.
 
 ## Updating it later
 
-Re-upload the new `index.html`, and bump the version string at the top of
-`sw.js` — change `japan-itinerary-v1` to `v2`. Without that bump, the phone
-will keep serving the old cached copy. Then open the app twice: once to fetch
-the update, once to see it.
+Re-upload the new `index.html` **and** the new `sw.js` together. The version
+string at the top of `sw.js` is already bumped for you on every rebuild — this
+kit is `japan-itinerary-v33`. Without a new `sw.js`, the phone keeps serving
+the old cached copy no matter how many times you reload.
+
+Then open the app twice: once to fetch the update, once to see it. If it still
+looks old, close it from the app switcher and reopen.
 
 ---
 
