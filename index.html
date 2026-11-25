@@ -239,7 +239,8 @@ nav.days button:focus-visible{outline:3px solid var(--c-coast);outline-offset:2p
 .word{background:var(--card);border:1.5px solid var(--rule);border-left:6px solid var(--wc);
   border-radius:10px;padding:14px 17px 15px}
 .word .jp{font-family:var(--display);font-size:20px;font-weight:700;line-height:1.35;letter-spacing:.02em}
-.word .ro{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--wc);margin:2px 0 7px}
+.word .ro{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--wc);margin:2px 0 2px}
+.word .ph{font-size:14px;font-weight:600;color:var(--ink);margin:0 0 7px;letter-spacing:.01em}
 .word p{margin:0;font-size:14.5px;color:var(--ink-2)}
 .word p b{color:var(--ink)}
 .wordnote{margin:14px 0 0;font-size:15px;color:var(--ink-2);font-style:italic}
@@ -530,7 +531,7 @@ const py=l=>(MB.lat1-l)/MB.latSpan*MB.h;
 const DAYS=[
  {tab:"Essentials",sub:"Read first",kind:"kit",place:"Must have · must do",
   title:"Before you go, and how not to look lost",
-  lede:"The eight things that have to exist on your phone or in your pocket before you land, the handful of rules that are genuinely worth following, and fifteen words that will carry you through almost every exchange you have.",
+  lede:"The eight things that have to exist on your phone or in your pocket before you land, the handful of rules that are genuinely worth following, and thirty-one words and phrases — each with a sound-it-out line — that will carry you through almost every exchange you have.",
   kit:[
    {crit:true,h:"Visit Japan Web",p:"Immigration and customs QR codes, registered in advance. Do <b>both</b> of you, then <b>screenshot the codes</b> — you do not want to be loading a website on Narita wifi at 15:00 with a queue behind you. Customs and immigration are two separate codes."},
    {crit:true,h:"Suica on the iPhone",p:"Wallet → + → Travel Card → Suica, or the <b>Welcome Suica Mobile</b> app from JR East (English, 180 days). The catch: <b>foreign Visa cards are blocked</b> for Apple Pay top-ups — it's a payment-network restriction, not a fixable glitch. Load it with a Mastercard or Amex, or top up with cash at any konbini register. Then set it as your <b>Express Transit</b> card so you tap through gates without unlocking."},
@@ -559,22 +560,38 @@ const DAYS=[
    "<b>Two hands</b> for anything handed to you — change, a card, a receipt — and put money on the little tray rather than into a hand.",
    "<b>No photography on the private lanes in Gion.</b> ¥10,000 fine, already flagged for Dec 2."],
   words:[
-   {jp:"すみません",ro:"Sumimasen",en:"<b>Excuse me / sorry / over here.</b> The single most useful word in the language. It flags a waiter, apologises for a bump, and opens any question you're about to ask a stranger."},
-   {jp:"ありがとうございます",ro:"Arigātō gozaimasu",en:"<b>Thank you.</b> Use the full form with strangers and staff. Shortening it to just <i>arigatō</i> is for friends."},
-   {jp:"お願いします",ro:"Onegaishimasu",en:"<b>Please / I'd like this.</b> Attach it to the end of almost any request and the request becomes polite."},
-   {jp:"これ",ro:"Kore",en:"<b>This one.</b> Point at the menu, the display case, the plastic food model: <i>kore, onegaishimasu.</i> That combination handles most of the ordering you'll ever do."},
-   {jp:"大丈夫です",ro:"Daijōbu desu",en:"<b>I'm fine / no thank you.</b> Much softer than a flat no. Use it to decline a bag, a receipt, a refill, or help you don't need."},
-   {jp:"はい",ro:"Hai",en:"<b>Yes.</b> Also functions as “I'm listening” — you'll hear it constantly as a conversational nod."},
-   {jp:"いくらですか",ro:"Ikura desu ka",en:"<b>How much is it?</b> Expect the answer in numbers you may not catch — most staff will show you the register display."},
-   {jp:"トイレはどこですか",ro:"Toire wa doko desu ka",en:"<b>Where is the toilet?</b> Worth knowing cold. Konbini, department stores and every station have them, and they're free and clean."},
-   {jp:"英語のメニューはありますか",ro:"Eigo no menyū wa arimasu ka",en:"<b>Do you have an English menu?</b> Often yes, and often kept under the counter until asked for."},
-   {jp:"カードで払えますか",ro:"Kādo de haraemasu ka",en:"<b>Can I pay by card?</b> Ask <i>before</i> you order at small counters and market stalls. Saves an awkward hunt for an ATM afterwards."},
-   {jp:"お会計お願いします",ro:"O-kaikei onegaishimasu",en:"<b>The bill, please.</b> Note that in a lot of places you carry the slip from your table to the register yourself rather than being brought a bill."},
-   {jp:"美味しい",ro:"Oishii",en:"<b>Delicious.</b> Say it out loud at a counter where the chef can hear you. It reliably changes the temperature of the meal."},
-   {jp:"いただきます",ro:"Itadakimasu",en:"<b>Said before you eat</b> — roughly “I gratefully receive this.” Hands together, then start."},
-   {jp:"ごちそうさまでした",ro:"Gochisōsama deshita",en:"<b>Said when you've finished,</b> and again on the way out the door. The best single thing you can say to someone who has just cooked for you."},
-   {jp:"わかりません",ro:"Wakarimasen",en:"<b>I don't understand.</b> Lead with <i>sumimasen</i>, follow with this, then open your translator. Nobody minds."}],
-  wordnote:"Greetings run on the clock: <b>ohayō gozaimasu</b> until about ten, <b>konnichiwa</b> through the day, <b>konbanwa</b> once it's dark."},
+   {jp:"すみません",ro:"Sumimasen",ph:"soo-mee-mah-sen",en:"<b>Excuse me / sorry / over here.</b> The single most useful word in the language. It flags a waiter, apologises for a bump, and opens any question you're about to ask a stranger."},
+   {jp:"ありがとうございます",ro:"Arigātō gozaimasu",ph:"ah-ree-gah-toh go-zai-mahss",en:"<b>Thank you.</b> Use the full form with strangers and staff. Shortening it to just <i>arigatō</i> is for friends."},
+   {jp:"お願いします",ro:"Onegaishimasu",ph:"oh-neh-guy-shee-mahss",en:"<b>Please / I'd like this.</b> Attach it to the end of almost any request and the request becomes polite."},
+   {jp:"これ",ro:"Kore",ph:"koh-reh",en:"<b>This one.</b> Point at the menu, the display case, the plastic food model: <i>kore, onegaishimasu.</i> That combination handles most of the ordering you'll ever do."},
+   {jp:"大丈夫です",ro:"Daijōbu desu",ph:"dye-joh-boo dess",en:"<b>I'm fine / no thank you.</b> Much softer than a flat no. Use it to decline a bag, a receipt, a refill, or help you don't need."},
+   {jp:"はい",ro:"Hai",ph:"hi",en:"<b>Yes.</b> Also functions as “I'm listening” — you'll hear it constantly as a conversational nod."},
+   {jp:"いくらですか",ro:"Ikura desu ka",ph:"ee-koo-rah dess kah",en:"<b>How much is it?</b> Expect the answer in numbers you may not catch — most staff will show you the register display."},
+   {jp:"トイレはどこですか",ro:"Toire wa doko desu ka",ph:"toy-reh wah doh-koh dess kah",en:"<b>Where is the toilet?</b> Worth knowing cold. Konbini, department stores and every station have them, and they're free and clean."},
+   {jp:"英語のメニューはありますか",ro:"Eigo no menyū wa arimasu ka",ph:"ay-go noh men-yoo wah ah-ree-mahss kah",en:"<b>Do you have an English menu?</b> Often yes, and often kept under the counter until asked for."},
+   {jp:"カードで払えますか",ro:"Kādo de haraemasu ka",ph:"kah-doh deh hah-rah-eh-mahss kah",en:"<b>Can I pay by card?</b> Ask <i>before</i> you order at small counters and market stalls. Saves an awkward hunt for an ATM afterwards."},
+   {jp:"お会計お願いします",ro:"O-kaikei onegaishimasu",ph:"oh-kai-kay oh-neh-guy-shee-mahss",en:"<b>The bill, please.</b> Note that in a lot of places you carry the slip from your table to the register yourself rather than being brought a bill."},
+   {jp:"美味しい",ro:"Oishii",ph:"oy-shee",en:"<b>Delicious.</b> Say it out loud at a counter where the chef can hear you. It reliably changes the temperature of the meal."},
+   {jp:"いただきます",ro:"Itadakimasu",ph:"ee-tah-dah-kee-mahss",en:"<b>Said before you eat</b> — roughly “I gratefully receive this.” Hands together, then start."},
+   {jp:"ごちそうさまでした",ro:"Gochisōsama deshita",ph:"go-chee-soh-sah-mah desh-tah",en:"<b>Said when you've finished,</b> and again on the way out the door. The best single thing you can say to someone who has just cooked for you."},
+   {jp:"わかりません",ro:"Wakarimasen",ph:"wah-kah-ree-mah-sen",en:"<b>I don't understand.</b> Lead with <i>sumimasen</i>, follow with this, then open your translator. Nobody minds."},
+   {jp:"英語を話せますか",ro:"Eigo o hanasemasu ka",ph:"ay-go oh hah-nah-seh-mahss kah",en:"<b>Do you speak English?</b> Ask it with a smile before launching into English. A lot of people understand more than they'll speak, so keep your sentences short."},
+   {jp:"こんにちは",ro:"Konnichiwa",ph:"kohn-nee-chee-wah",en:"<b>Hello / good afternoon.</b> The all-day greeting. Morning and evening versions are in the note below."},
+   {jp:"いいえ",ro:"Iie",ph:"ee-eh",en:"<b>No.</b> Fine for facts (“are you finished?” — <i>iie</i>). For turning something down, <i>daijōbu desu</i> is gentler."},
+   {jp:"ゆっくりお願いします",ro:"Yukkuri onegaishimasu",ph:"yook-koo-ree oh-neh-guy-shee-mahss",en:"<b>Slowly, please.</b> When an answer comes back faster than you can follow."},
+   {jp:"もう一度お願いします",ro:"Mō ichido onegaishimasu",ph:"moh ee-chee-doh oh-neh-guy-shee-mahss",en:"<b>One more time, please.</b> Pairs naturally with the one above."},
+   {jp:"二人です / 四人です",ro:"Futari desu / Yonin desu",ph:"foo-tah-ree dess / yoh-neen dess",en:"<b>Two people / four people.</b> The first thing a host asks is how many. Hold up fingers as you say it — two for the two of you, four when Chad and Erika are along."},
+   {jp:"予約しています",ro:"Yoyaku shite imasu",ph:"yoh-yah-koo shteh ee-mahss",en:"<b>I have a reservation.</b> Follow it with the name on the booking."},
+   {jp:"お水をください",ro:"O-mizu o kudasai",ph:"oh-mee-zoo oh koo-dah-sigh",en:"<b>Water, please.</b> Usually free and refilled without asking, but useful at counters where the glass sits empty."},
+   {jp:"ここに行きたいです",ro:"Koko ni ikitai desu",ph:"koh-koh nee ee-kee-tie dess",en:"<b>I want to go here.</b> Point at the address or map pin on your phone. The standard way to give a taxi driver a destination."},
+   {jp:"駅はどこですか",ro:"Eki wa doko desu ka",ph:"eh-kee wah doh-koh dess kah",en:"<b>Where is the station?</b> Swap <i>eki</i> for anything else: <i>toire</i>, <i>hoteru</i> (hotel), <i>konbini</i>."},
+   {jp:"写真を撮ってもいいですか",ro:"Shashin o totte mo ii desu ka",ph:"shah-sheen oh toht-teh moh ee dess kah",en:"<b>May I take a photo?</b> Ask in small shops, of people, and of anyone's food stall. Plenty of places say no, and mean it."},
+   {jp:"アレルギーがあります",ro:"Arerugī ga arimasu",ph:"ah-reh-roo-gee gah ah-ree-mahss",en:"<b>I have an allergy.</b> Say this, then show the item written down or on your translator."},
+   {jp:"乾杯",ro:"Kanpai",ph:"kahn-pie",en:"<b>Cheers!</b> Wait until everyone's glass is up before the first sip."},
+   {jp:"ごめんなさい",ro:"Gomen nasai",ph:"go-men nah-sigh",en:"<b>I'm sorry</b> — a real apology, for stepping on a foot rather than just getting someone's attention."},
+   {jp:"助けてください",ro:"Tasukete kudasai",ph:"tah-soo-keh-teh koo-dah-sigh",en:"<b>Please help me.</b> For a real problem. Emergency numbers: 110 police, 119 ambulance or fire."},
+   {jp:"じゃあ、また",ro:"Jā, mata",ph:"jah, mah-tah",en:"<b>See you / bye.</b> The casual goodbye you'll actually hear. <i>Sayōnara</i> sounds final, like you never expect to meet again."}],
+  wordnote:"Greetings run on the clock: <b>ohayō gozaimasu</b> (oh-hi-yoh go-zai-mahss) until about ten, <b>konnichiwa</b> (kohn-nee-chee-wah) through the day, <b>konbanwa</b> (kohn-bahn-wah) once it's dark. How to read the sound-it-out line: give every syllable the same weight — Japanese has no strong stress — and let a final <i>u</i> almost vanish, so <i>desu</i> is “dess” and <i>-masu</i> is “mahss”."},
 
  {tab:"Bookings",sub:"Do these",kind:"book",place:"Everything with a deadline",
   title:"What has to be booked, and roughly when",
@@ -1493,6 +1510,7 @@ function render(d){
     const words=d.words.map((w,i)=>`<div class="word" style="--wc:var(${WORDC[i%WORDC.length]})">
       <div class="jp">${w.jp}</div>
       <div class="ro">${w.ro}</div>
+      ${w.ph?`<div class="ph">\u{1F5E3} ${w.ph}</div>`:''}
       <p>${w.en}</p></div>`).join('');
     panel.innerHTML=`
       <section class="dayhead">
@@ -1506,7 +1524,7 @@ function render(d){
       <section class="rules"><ul>${d.rules.map(r=>`<li>${r}</li>`).join('')}</ul></section>
       ${d.laundry?`<h3 class="sechead">Laundry \u2014 before you board on the 30th</h3>
       <section class="rules" style="border-left-color:var(--c-port)"><ul>${d.laundry.map(r=>`<li>${r}</li>`).join('')}</ul></section>`:''}
-      <h3 class="sechead">Fifteen words that will carry you</h3>
+      <h3 class="sechead">Thirty-one words and phrases that will carry you</h3>
       <div class="wordgrid">${words}</div>
       <p class="wordnote">${d.wordnote}</p>`;
     return;
